@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TEDxAideyanSt</title>
+        <link rel="shortcut icon" href="img/fav/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/fav/favicon.ico" type="image/x-icon">
+        <link rel="manifest" href="img/manifest.json">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/fb31cef262.js"></script>
+        <link rel="stylesheet" href="">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  
+        <style>
+        nav {
+            z-index: 9;
+            }
+
+            nav.navbar1{
+                background-color: black!important;
+                color: #fff;
+            }
+            #countdowntimer { 
+                width: 470px; 
+                margin:0 auto;
+                font-size:70px;
+                letter-spacing:5px;
+              }
+            nav.navbar2{
+                background-color: #fff!important;
+                color: #000000!important;
+                padding-bottom: 60px;
+            }
+
+            nav.navbar2 ul li{
+            margin-right: 10px;
+            }
+
+            nav.navbar2 ul{
+              margin-right: 60px;
+            }
+            nav.navbar2 ul li a{
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              color:#000000!important;
+              font-weight: bold;
+              line-height: 26px;
+            }
+         
+            nav.navbar1 li a {
+                color: #fff; 
+            }
+            .social li a i.fab{
+              color: #a5a5a5;
+            }
+            .social li a i.fab:hover{
+              color: #fff;
+            }
+            nav.navbar2 .navbarbrand img{
+        
+            }
+            nav.navbar2 .nav-link:active, nav.navbar2 .nav-link:hover {
+              border-bottom: 2px solid #e62b1e;
+            }
+        .skew {
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           /* background: linear-gradient(80.51deg, #FF0303 37.29%, rgba(183, 2, 2, 0.81) 70.43%, rgba(233, 233, 233, 0) 122.29%);
+            */
+            background: #e62b1e;
+            transform: skewY(-8deg);
+            transform-origin: top left;
+        }
+
+        .header-text{
+          background: transparent;
+          /*left: -34px;*/
+          position: relative;
+          top: 38px;
+          
+        }
+        .header-text h1{
+          font-family: 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 72px;
+          line-height: 84px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          color: #FFFEFE;
+
+        }
+        .header-text p{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          color: rgba(255, 252, 252, 0.75);
+        }
+
+        .benin-mask{
+          display: none;
+          
+        }
+        @media (min-width: 993px) {
+
+            .benin-mask{
+
+            position: absolute;
+            top: 230px;
+            height: 300px;
+            z-index: 9;
+            display: inherit;
+            right: 50px;
+          }
+        }
+
+        .get-ticket-btn{
+          background: #000000;
+          height: 48px;
+          width: 208px;
+          border:none;
+          border-radius: 4px;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+          box-shadow: 0px 4px 9px 0px #00000040;
+        }
+
+        .right-col-flex {
+          padding: 60px 40px 20px 5px;
+          min-height: 500px;
+          display: flex;
+          background: linear-gradient(81.41deg, #AE0404 4.59%, rgba(45, 39, 39, 0) 133.6%);
+        }
+
+        .right-col-flex p{
+         
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 34px;
+          display: flex;
+          align-items: center;
+
+          color: #FFFEFE; 
+        }
+
+        .right-col-flex h1{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 43px;
+          line-height: 55px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          color: #FFFEFE;
+        }
+        .bg-trans{
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 4px;
+          padding: 10px;
+          left: -11px;
+          background: linear-gradient(83.14deg, rgba(252, 0, 0, 0.89) 3.05%, rgba(252, 0, 0, 0) 180.85%);
+        }
+
+        /******* CAROUSEL STYLING *******/
+        .carousel-item{
+          max-height: 450px;
+        }
+
+        /******* END OF CAROUSEL styling *******/
+        .event-details {
+          padding:50px;
+        }
+        /***************** VENUE SECTION STYLE*************************/
+        .venue{
+             /****  background: url('img/TEDx_19_Black_White.png')***/
+        }
+
+        .venue h1{
+          margin-bottom: 20px;
+        }
+
+        .v-title{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 29px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #1F1B1B;
+          padding-bottom: 12px;
+        }
+        .v-details{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 34px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          padding-bottom: 20px;
+          color: #FF0101;
+        }
+
+        /*   SPEAKER   */
+        .speakers-container{
+          padding: 50px;
+          
+        }
+        .speakers-container h1{
+          border-radius: 3px;
+          text-align: center;
+          margin-bottom: 20px;
+          color: #fff;
+          background: #ef0505;
+          justify-content: center;
+          width: 176px;
+        }
+        .speakers-container .btn{
+        color: #fff!important;
+        background: black;
+        font-weight: 600;
+        font-size: 20px;
+        box-shadow: 1px 3px 6px -3px rgba(0, 0, 0, 0.44);
+        }
+        .spk-card{
+          display:none;
+          align-items: center;
+          justify-content: center;
+        }
+        .call-for-speakers-img-container{
+          width: auto;
+          padding: 20px;
+        }
+     
+     
+       /* Speaker styling */
+       .card{
+          border: none;
+          border-radius: 5px;
+          margin: 20px;
+          box-shadow: 0 0 20px -10px #f82b0a8c/*#F82B0A*/;
+        }
+        .card-body{
+            padding: 0;
+            border: none;
+        }
+
+        .description{
+          transition: all 1.5s ease;
+        }
+
+        .description-text{
+          transition: all 1.5s ease;
+          display: none;
+         
+        }
+
+        .card-body:hover .description-text{
+          display: block;
+          font-family: 'Noto Sans TC', sans-serif;
+          font-weight: 300px;
+          color: white;
+          padding: 20px;
+          transition: all 1.5s ease;
+          text-align: justify;
+          font-size: 12px;
+          text-shadow: 0 0 20px black;
+        }
+
+        .card-body:hover .description {
+          display: block;
+          width: 100%;
+          position: absolute;
+          z-index: 9999;
+          height: 100%;
+          background-color: #ff000052;
+
+        }
+
+        .card-body img{
+            border-radius: 5px;
+        }
+        
+        .speaker-name{
+          padding: 10px;
+          text-align: center;
+          font-weight: 600;
+          color: #F82B0A;
+          overflow-wrap: initial;
+        }
+        .col-md-4 {
+          padding: 0px;
+        }
+        /*END OF SPEAKERS*/
+
+
+        /* Footer */
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        section {
+            padding: 60px 0;
+        }
+
+        section .section-title {
+            text-align: center;
+            color: #007b5e;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+        #footer {
+            background:rgba(23, 0, 0, 0.9) !important;
+        }
+        #footer h5{
+          padding-left: 10px;
+            border-left: 3px solid #eeeeee;
+            padding-bottom: 6px;
+            margin-bottom: 20px;
+            color:#ffffff;
+        }
+        #footer a {
+            color: #ffffff;
+            text-decoration: none !important;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        #footer ul.social li{
+          padding: 3px 0;
+        }
+        #footer ul.social li a i {
+            margin-right: 5px;
+          font-size:25px;
+          -webkit-transition: .5s all ease;
+          -moz-transition: .5s all ease;
+          transition: .5s all ease;
+        }
+        #footer ul.social li:hover a i {
+          font-size:30px;
+          margin-top:-10px;
+        }
+        #footer ul.social li a,
+        #footer ul.quick-links li a{
+          color:#ffffff;
+        }
+        #footer ul.social li a:hover{
+          color:#eeeeee;
+        }
+        #footer ul.quick-links li{
+          padding: 3px 0;
+          -webkit-transition: .5s all ease;
+          -moz-transition: .5s all ease;
+          transition: .5s all ease;
+        }
+        #footer ul.quick-links li:hover{
+          padding: 3px 0;
+          margin-left:5px;
+          font-weight:700;
+        }
+        #footer ul.quick-links li a i{
+          margin-right: 5px;
+        }
+        #footer ul.quick-links li:hover a i {
+            font-weight: 700;
+        }
+
+        @media (max-width:767px){
+          #footer h5 {
+            padding-left: 0;
+            border-left: transparent;
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+        }
+        }
+        @media (max-width:320px) {
+          .card-body:hover .description {
+            display: none;
+          }
+        }
+        @media (max-width:420px) {
+          .card-body:hover .description-text{
+            font-size: 9px;
+          }
+        }
+  
+/* FOOTER END */
+        </style>
+    
+    
+    </head>
+    <body>
+        <!-------------------------------- NAVBAR ONE    --------------------------------------->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar1">
+           
+           
+            <div class="navbar-collapse" id="navbarNav1">
+              <ul class="navbar-nav " style="flex-direction:row; font-weight: 600;">
+                <li class="nav-item active" style="margin: 0 10px;">
+                  <a class="nav-link" style="color: #fff;" href="/tickets/">TICKETS </a>
+                </li>
+                <li class="nav-item" style="margin: 0 10px;">
+                  <a class="nav-link disabled" style="color: #353637;" href="javascript:void();">SUGGEST SPEAKERS</a>
+                </li>
+                <li class="nav-item" style="margin: 0 10px;">
+                  <a class="nav-link" style="color: #353637;" href="javascript:void();">VOLUNTEER</a>
+                </li>
+            </ul>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav ml-auto social" style="font-weight: 600;">
+                  <li class="nav-item active" style="margin: 0 10px;">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="nav-item" style="margin: 0 10px;">
+                    <a class="nav-link" href="https://www.instagram.com/tedxaideyanst/"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="nav-item" style="margin: 0 10px;">
+                    <a class="nav-link" href="https://twitter.com/TEDxAideyanSt"><i class="fab fa-twitter"></i></a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+<!--------------------------------------------  END ---------------------------------------------------->
+
+<!--------------------------------------------  SECOND NAV ---------------------------------------------------->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar2">
+        <a class="navbar-brand" href="#"><img  class="image-responsive" src="img/tedxAideyanStlogo.jpg" height="55px" alt="tedxAideyanStlogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav2">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link home" href="#" style="border-bottom: 2px solid #e62b1e">Home </a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link about" href="about/">About </a>
+                  </li>
+            <li class="nav-item">
+              <a class="nav-link speakers" href="Speakers/">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link talks" href="talks/">Watch talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link partners" href="partners/">Partners</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contact" href="contact/" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!------------------- END ----------------------------------------------------------->
+    
+    <!-- countdown -->
+    <span class="animated slideInLeft" style=" 
+    position: relative;
+    background: #495057;
+    padding: 15px 71px;
+   
+    z-index: 9;
+    left: -6px;
+    color: #fff;
+    background: #433D3D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: -12px;
+    "> 
+    <!-- Start of countdown --->
+   <span class="future_date" id="demo" style="color: red;font-weight: 500;text-shadow: 0 0 0 #dc3545"></span>&nbsp <!--Left! --></span>
+    <!--End of countdown-->
+
+    <!------------------- start of BODY ----------------------------------------------------------->
+    <div class="skew"></div>
+      <div class="container" style="height: 100vh;">
+        <div class="jumbotron header-text">
+          <h1 class="display-4">African Futurism</h1>
+          <p class="lead">Prepped by the past, impacting the future,<br> changing the present</p>
+          
+          <p class="lead">
+            <a class="btn btn-primary btn-lg get-ticket-btn  animated pulse" href="/tickets/" role="button">Get ticket</a>
+          </p>
+        </div>
+        
+   
+        <img class="img-fluid benin-mask" src="img/TEDx_19_logo.png" alt="">
+          
+      </div>
+    <div></div>
+    <!------------------- END ----------------------------------------------------------->
+
+     <!------------------- CAROUSEL START ----------------------------------------------------------->
+    <div class="container-fluid" >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/slideshow/IMG-2421.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>TEDxAideyanst</h5>
+                <p></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slideshow/_MG_1224.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="img/slideshow/IMG-2440.jpg" alt="third slide">
+            </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="img/slideshow/_MG_1310.jpg" alt="fourth slide">
+            </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slideshow/IMG_3890 - Copy.jpg" alt="fifth">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slideshow/IMG-2436.jpg" alt="sixth">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slideshow/IMG_3914.jpg" alt="seventh">
+          </div>
+        </div>
+        </div>
+      </div>
+       <!------------------- END CAROUSEL----------------------------------------------------------->
+
+      <!------------------- START OF VENUE AND DETAILS ----------------------------------------------------------->
+      <div class="container venue" style="margin-top: 145px;">
+        <div class="row">
+          <div class="col-md-6 event-details"> 
+            <h1>Event details</h1>
+            <ul>
+              <li class="v-title">Date</li>
+              <li class="v-details">25th January 2020</li>
+              <li class="v-title">Time</li>
+              <li class="v-details">9AM</li>
+              <li class="v-title">Venue</li>
+              <li class="v-details">Oba Akenzua Cultural Centre</li>
+            </ul>
+          </div>
+          <div class="col-md-6 right-col-flex">
+            <div class="bg-trans"> 
+             <!-- <img class="img-fluid" src="img/TEDx_19_logo.png" alt="" style="position: absolute; z-index:-1;max-height: 490px;">-->
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                  <img class="img-fluid" src="img/TEDx_19_logo.png" alt="benin mask">
+              </div>
+              <div class="col-md-9">
+                  <div class="bg-red-tran" style="padding: 20px;">
+                      <h1>African Futurism</h1>
+                      <p>Africa is a great continent that has massive share in resources, human capital and creative brains. One would have expected that these would have put Africa as one of the power houses on the globe, but Africa seems to be playing short, hence the phrase, 'Africa is rising'
+                        Our focus in this year's TEDx is to reimagine the place and position of Africa amongst the other continent of the world. To discuss where we are coming from as a people, what we are presently doing, and where we are going, hence, the vision African-Futurism!</p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+       <!------------------- END ----------------------------------------------------------->
+
+
+        <!------------------- START OF SPEAKERS ----------------------------------------------------------->
+        <div class="container speakers-container">
+          <h1>Speakers</h1>
+        
+           <div class="call-for-speakers-img-container container">
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                      <div class="description">
+                         <span class="description-text"> Anwuli Anwansedo is the Director of the Ministry Transformation and Development Center at Firm Foundation International where Families and Individuals are helped to have stable wellbeing, discover their place and gifting by discovering their unique advantage and relate better with others.
+                          Anwuli is passionate about families and believes that individuals can fulfil their potential and become the best version of themselves if they focus on the entire wholeness package. She is a trained counsellor and a soul care practitioner under the tutelage of Kay Benson-Akhigbe II.
+                          Anwuli holds a degree in Education and counselling from the University of Benin and Benson Idahosa University.
+                          </span>
+                        </div>
+                    <img src="img/speaker/2020/Anwuli Anwasedo .png" alt="" width="100%" srcset="">
+                    <h5 class="speaker-name">Anwuli Anwasedo</h5>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="description">
+                        <span class="description-text">Bode Asiyanbi is the King of storytelling, He is a two-time winner of the BBC African Performance Playwriting Prize (2005 and 2011) and the British Council LTF Playwriting Prize (2016 and 2017).
+                          Born in the Western part of Nigeria and educated at Obafemi Awolowo University and Lancaster University, He enjoys exploring themes of trauma, identity and the place of memory in history. His short stories have appeared in Munyori Literary Journal, Kalahari Review, Lawino, Per Contra and Wasafiri. His stage plays include Shattered, Room 69, The Wait, and One Chance!. His poems have also been featured in the anthology of contemporary African poetry, "A Thousand Voices Rising".
+                          Did you know he was the mastermind behind the award-winning movie ‘Chief Daddy’? Now you know!
+                          </span>
+                    </div>
+                      <img src="img/speaker/2020/Bode Asinyanbi .jpg" alt="" width="100%" srcset="">
+                      <h5 class="speaker-name">Bode Asinyanbi</h5>
+                  </div>
+                </div>
+              </div>
+
+<!-- Edit the text to allow the bacground color show with it on hover and push down other content-->
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                      <div class="description">
+                          <span class="description-text">Daniel Ikuenobe is the chairman, Edo state economic management team and special adviser to the Governor of Edo state on Economic matters. Prior to his appointment, He served as senior special assistant to the president of Nigeria on the implementation of the Economic recovery and growth plan and also coordinated the ERGP power and Gas lab.
+                              Daniel Ikeuenobe is passionate about restoring Economic growth, tackling the problem of unemployment, and making Nigeria a globally competitive economy. He specialises in the design and implementation of public policy, corporate strategy and planned change. 
+                              He was also among the leading professionals selected by the U.S Embassy to mentor the 2019 Mandela Washington Fellows.
+                              </span>
+                      </div>
+                      <img src="img/speaker/2020/Daniel_Ikuenobe.jpg" alt="" width="100%" srcset="">
+                      <h5 class="speaker-name">Daniel Ikuenobe</h5>
+                     
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                      <div class="description">
+                          <span class="description-text">Emeka Okoye breathes and live Tech, and stands as a strong advocate for the use of AI, Open Data & Semantic Web to re-develop Africa.
+                            Emeka Okoye has been solving real-world problems and has over 17 years experience at the forefront of technology and innovation, having founded and co-founded Nigerian’s foremost Tech startups, built mobile apps, websites and software, Emeka Okoye affirms that Africa has a lot to offer if only we can accept our true identity and be original.  He sits on the board of lots of organizations across Africa and has been listed among the 20 Most Influential Technology People in Africa by itnewsafrica.com and Top Global 20 Mobile Commerce, Mobile Payments, Mobile Banking and Mobile Money influencers in Social Media by Obopay.com.
+</span>
+                      </div>
+                      <img src="img/speaker/2020/Emeka Okoye .jpg" alt="" width="100%" srcset="">
+                      <h5 class="speaker-name">Emeka Okoye</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                      <div class="description">
+                          <span class="description-text">Ukinebo Dare is the Managing Director of the Edo State Skills Development Agency and she oversees the Edojobs initiative. An arm of the government that is responsible for implementing programs towards the fulfilment of the promise of His Excellency, Mr Godwin Obaseki, Executive Governor of Edo State to create 200,000 jobs in 4 years. Since her tenure, over 150,000 youth have benefitted from the State Government’s job creation initiatives.
+                            She is the recipient of many awards and recognitions including the JCI Ten Outstanding Young Persons Award for Personal Achievement in Nigeria 2017, the Ford Foundation Prize for Youth Employment at the Future Awards Africa in 2015, Business Day and the Federal Ministry of Trade and Investment 40 Under 40, in 2019 among others. She is a 2019 MIPAD100 honoree, recognizing her along with other global leaders as one of the 100 Most Influential People of African Descent under 40. She was also selected by the United States Department of State as a 2017 Mandela Washington Fellow.
+                            Ukinebo Dare believes strongly that if Africans are empowered with the right skills and support, we can compete and win globally.
+                            </span>
+                      </div>
+                      <img src="img/speaker/2020/Ukinebo Dare .jpg" alt="" width="100%" srcset="">
+                      <h5 class="speaker-name">Ukinebo Dare</h5>
+                  </div>
+                </div>
+              </div>
+
+             
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                      <div class="description">
+                          <span class="description-text">Enotie is a self taught multi talented artist who produces 2D/3D animation, as well as music. His talent became obvious at a young age that his parents had to employ an art teacher for him. 
+                            Enotie has a degree in Economics and statistics in the university of Benin, Benin city, Nigeria.
+                            He set up Curio's studios in 1995 which has become a home to some of the leading contemporary artist.
+                            He made his debut solo art exhibition "Eclectic treasure" in 2009 in Terra Kulture, Victoria Island Lagos. 
+                            He has been selected for numerous awards, both home and abroad which includes F.AC.E awards for best visual artist in 2014 Atlanta. L.M.A awards for best visual 2014 amongst others
+                            </span>
+                      </div>
+                      <img src="img/speaker/2020/Enotie Ogbebor.jpeg" alt="" width="100%" srcset="">
+                      <h5 class="speaker-name">Enotie Ogbebor</h5>
+                  </div>
+                </div>
+              </div>
+
+               <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                      <div class="description">
+                          <span class="description-text">Tolu Giwa-Sowande is a self-motivated and dedicated Medical doctor per excellence, her passion and work in creating awareness for cervical cancer and teenage pregnancy have been so impactful. 
+                            </span>
+                      </div>
+                      <img src="img/speaker/2020/Tolu Sowande .jpg" alt="" width="100%" srcset="">
+                      <h5 class="speaker-name">Tolu Sowande</h5>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            </div>
+            </div>
+
+          <!--  <h3>Coming soon!</h3> 
+          <a href="https://docs.google.com/forms/d/1vCMBkeCwfj6cqIEKKwj_0IwHecA6N9ixPtfYUHm3720/edit?usp=drivesdk" class="btn btn-primary"> Suggest a speaker</a> -->
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <!--<h1>Volunteer</h1>
+        
+          <div class="call-for-speakers-img-container container">
+            <img src="img/TEDx_19__volunteers.jpg" alt="" srcset=""style="width: 100%;">
+            <p></p>
+            <p>You can volunteer, work with an amazing team, and contibute to the success of this event</p>
+          </div>
+          
+
+        <h3>Coming soon!</h3> 
+        <a href="/volunteer/" class="btn btn-primary">Become a Volunteer</a>-->
+        
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card spk-card">
+                speaker1
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card spk-card">
+                  speaker2
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card spk-card">
+                  speaker3
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------------- END OF SPEAKER  ----------------------------------->
+
+
+        <!------------------------------ Footer ------------------------------------------>
+        <section id="footer">
+          <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="javascript:void();">Home</a></li>
+                  <li><a href="about/">About</a></li>
+                  <li><a href="talks/">Watch talks</a></li>
+                  <li><a href="partners/">Our Partners</a></li>
+                  <li><a href="https://tedxAideyanSt.com/tickets/">Get Tickets</a></li>
+                  <li><a href="Speakers/">Speakers</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="javascript:void();" style="color: #353637;">Volunteer</a></li>
+                  <li><a href="javascript:void();" style="color: #353637;">Suggest Speakers</a></li>
+                  <li><a href="partners/">Sponsor this event</a></li>
+                 
+                </ul>
+              </div>
+             
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/TEDxAideyanSt"><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.instagram.com/tedxaideyanst/"><i class="fab fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+              </div>
+              </hr>
+            </div>	
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <p><u><a href="https://www.tedxaidenyanst.com/">TEDxAideyanSt.com </a></u> &nbsp This independent TEDx event is operated under license from TED.</p>
+                <p class="h6">&copy All rights Reserved.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank"></a></p>
+              </div>
+              </hr>
+            </div>	
+          </div>
+        </section>
+        <!-- ./Footer -->
+
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+        <script>
+
+          
+          // Set the date we're counting down to
+          var countDownDate = new Date("Jan 25, 2020 15:37:25").getTime();
+          
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+          
+            // Get today's date and time
+            var now = new Date().getTime();
+              
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+              
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "days " + hours + "hrs "
+            + minutes + "mins " + seconds + "secs ";
+              
+            // If the count down is over, write some text 
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+
+        
+          </script>
+    </body>
+</html>
